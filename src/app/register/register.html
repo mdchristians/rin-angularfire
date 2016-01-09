@@ -9,28 +9,28 @@
             		<div class="row">
 						<fieldset class="form-group col-sm-6">
     						<label for="firstName">First Name</label>
-    						<input type="email" class="form-control" id="firstName" placeholder="Luke" autocomplete="off">
+    						<input type="text" class="form-control" id="firstName" placeholder="Luke" autocomplete="off" ng-model="vm.user.firstName">
  						</fieldset>
  						<fieldset class="form-group col-sm-6">
     						<label for="lastName">Last Name</label>
-    						<input type="text" class="form-control" id="lastName" placeholder="Skywalker" autocomplete="off">
+    						<input type="text" class="form-control" id="lastName" placeholder="Skywalker" autocomplete="off" ng-model="vm.user.lastName">
  						</fieldset>
  					</div>
  					<fieldset class="form-group">
     					<label for="email">Email</label>
-    					<input type="email" class="form-control" id="email" placeholder="howdy@gmail.com" autocomplete="off">
+    					<input type="email" class="form-control" id="email" placeholder="howdy@gmail.com" autocomplete="off" ng-model="vm.user.email">
  					</fieldset>
  					<fieldset class="form-group">
     					<label for="password">Password</label>
-    					<input type="password" class="form-control" id="password" autocomplete="off">
+    					<input type="password" class="form-control" id="password" autocomplete="off" ng-model="vm.user.password">
  					</fieldset>
  					<fieldset class="form-group">
     					<label for="confirmPassword">Confirm Password</label>
-    					<input type="password" class="form-control" id="confirmPassword" autocomplete="off">
+    					<input type="password" class="form-control" id="confirmPassword" autocomplete="off" ng-model="vm.user.confirmPassword">
  					</fieldset>
                     <div class="form-group row">
-     					<div class="col-sm-12 text-right">
-                        	<button type="submit" class="btn btn-primary-outline" ui-sref="app.home">Register</button>
+                        <div class="col-sm-12 text-right">
+                            <button type="submit" class="btn btn-primary-outline" ng-click="vm.register()">Register</button>
                         </div>
                     </div>
  				</div>

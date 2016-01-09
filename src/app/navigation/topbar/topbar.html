@@ -10,11 +10,12 @@
 		<nav class="nav navbar-nav pull-right">
 			<div class="btn-group">
 				<a class="text-uppercase" data-toggle="dropdown">
-					Luke Skywalker
 					<img class="avatar menu-img" src="https://pbs.twimg.com/profile_images/726100805/4394612844_0b36f6a9db_o.jpg">
+					{{ vm.currentUser.firstName }} {{ vm.currentUser.lastName }}
+					<i class="icon-arrow-down"></i>
 				</a>
 				<div class="dropdown-menu">
-					<a class="dropdown-item" ui-sref="app.login" href>Logout</a>
+					<a class="dropdown-item" ng-click="vm.logout()" href>Logout</a>
 				</div>
 			</div>
 		</nav>

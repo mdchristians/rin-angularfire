@@ -10,6 +10,7 @@
                 'ui.bootstrap',
                 'ui.router',
                 'toastr',
-                'chart.js'
+                'chart.js',
+                'firebase'
             ]);
 })();
